@@ -1,3 +1,26 @@
 {
   "CurrentProjectSetting": null
 }
+
+module.exports = {
+  networks:{
+    development:{
+      host:"https://mainnet.infura.io/v3/8264661ebc6343dea7371a9dd2dd2669",
+      port:"8334",
+      network_id:"*"
+    },
+    advanced:{
+      websockets : false,
+    },
+    
+  },
+  contracts_build_directory:"./assets/files/",
+  compilers: {
+    solc: {
+      optimizer :{
+        enabled: false,
+        runs: 200
+      }
+    }
+  }
+}
